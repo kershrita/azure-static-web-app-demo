@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure Static Web App Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #0078D4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #005A9E;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Azure Static Web Apps!</h1>
+    <p>Click the button below to see some magic.</p>
+    <button onclick="changeText()">Click Me</button>
+    <p id="message"></p>
+
+    <script>
+        function changeText() {
+            document.getElementById('message').innerText = "Hello from Azure Static Web Apps!";
+        }
+    </script>
+</body>
+</html>
